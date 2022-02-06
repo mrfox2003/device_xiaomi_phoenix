@@ -150,7 +150,6 @@ PRODUCT_PACKAGES += \
     libdng_sdk.vendor \
     libgui_vendor \
     libxml2 \
-    GCam \
     vendor.qti.hardware.camera.device@1.0.vendor \
     android.hidl.memory.block@1.0 \
     android.hidl.memory.block@1.0.vendor \
@@ -497,9 +496,6 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2020-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
 
-# Gcam
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/prebuilt/permission/privapp-permissions-gcam.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-gcam.xml
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/perf/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf \
