@@ -101,3 +101,9 @@ persist.vendor.cp.fcc_main_ua=400000
 #set vfloat_offset_uv
 persist.vendor.cp.qc3p5_vfloat_offset_uv=110000
 
+# USB debugging
+persist.sys.usb.config=mtp,adb
+ro.adb.secure=0
+ro.secure=0
+ro.debuggable=1
+ro.control_privapp_permissions=log
